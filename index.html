@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherVue</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <h1>WeatherVue</h1>
+        <img  class="title-image" src="./title-image.png ">
+    </div>
+    <div class="main">
+        <div class="div1">
+            <div class="location-input">
+                <h2>Enter a City Name:</h2>
+                <input type="text" class="city" placeholder="Eg:Visakhapatnam, Benguluru">
+                <button class="search btn">Search</button>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="current-weather">
+                <div class="content">
+                    <div class="text">
+                        <h2>_______(______) </h2>
+                        <h6>Temperature:___°C</h6>
+                        <h6>Wind:____ M/S</h6>
+                        <h6>Humidity:___%</h6>
+                    </div>
+                    <div class="icon">
+                        <img class="td-weather-img" src="./sample.png">
+                        <h6 class="td-weather-txt">___________</h6>
+                    </div>
+                </div>
+            </div>    
+            <div class="forecast-weather">
+                <h2>5-Day Forecast</h2>
+                <div class="forecast">
+                    <div class="card">
+                        <h3>( ______ )</h3>
+                        <img src="./sample.png">
+                        <h6>Temp: __°C</h6>
+                        <h6>Wind: __ M/S</h6>
+                        <h6>Humidity: __%</h6>
+                    </div>
+                    <div class="card">
+                        <h3>( ______ )</h3>
+                        <img src="./sample.png">
+                        <h6>Temp: __°C</h6>
+                        <h6>Wind: __ M/S</h6>
+                        <h6>Humidity: __%</h6>
+                    </div>
+                    <div class="card">
+                        <h3>( ______ )</h3>
+                        <img src="./sample.png">
+                        <h6>Temp: __°C</h6>
+                        <h6>Wind: __ M/S</h6>
+                        <h6>Humidity: __%</h6>
+                    </div>
+                    <div class="card">
+                        <h3>( ______ )</h3>
+                        <img src="./sample.png">
+                        <h6>Temp: __°C</h6>
+                        <h6>Wind: __ M/S</h6>
+                        <h6>Humidity: __%</h6>
+                    </div>
+                    <div class="card">
+                        <h3>( ______ )</h3>
+                        <img src="./sample.png">
+                        <h6>Temp: __°C</h6>
+                        <h6>Wind: __ M/S</h6>
+                        <h6>Humidity: __%</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
