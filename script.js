@@ -14,7 +14,7 @@ async function getCityCoordinates() {
         alert("Enter a valid city name");
         return; 
     }
-    let gURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=ffbc8640da362ef23b347ac43f2ab196`;
+    let gURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=ffbc8640da362ef23b347ac43f2ab196`;
     try{
         let response = await fetch(gURL);
         let gData = await response.json();
