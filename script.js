@@ -27,7 +27,7 @@ async function getCityCoordinates() {
     }
 }
 async function getWeatherDetails(name,lat,lon){
-    let wURL=`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=ffbc8640da362ef23b347ac43f2ab196`;
+    let wURL=`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=ffbc8640da362ef23b347ac43f2ab196`;
     try{
         let response=await fetch(wURL);
         let data=await response.json();
@@ -88,7 +88,7 @@ async function getUserCoordinates(){
     try{
         const position=await navigator.geolocation.getCurrentPosition();
         const {lat,lon}=position.coords;
-        const rURL = `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=ffbc8640da362ef23b347ac43f2ab196`
+        const rURL = `https//api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=ffbc8640da362ef23b347ac43f2ab196`
         const response=await fetch(rURL);
         const data=await response.json();
         const {name}=data[0];
